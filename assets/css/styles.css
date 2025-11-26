@@ -504,9 +504,138 @@ img {
 
 }
 /*=============== REVIEWS ===============*/
+.reviews__container{
+  row-gap: 6rem;
+}
+
+.reviews__content{
+  display: grid;
+}
+
+.reviews__swiper{
+  margin-inline: initial;
+  padding-bottom: 6rem;
+}
+
+.reviews__card{
+  display: grid;
+  row-gap: 1rem;
+  padding-bottom: 1rem;
+}
+
+.reviews__profile{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 0.5rem;
+}
+
+.reviews__photo{
+  width: 60px;
+  border-radius: 50%;
+}
+
+.reviews__data{
+  display: grid;
+  row-gap: 0.25rem;
+}
+
+/* .reviews__name, */
+.reviews__number{
+  font-size: var(--h3-font-size);
+  color: var(--first-color);
+}
+
+.reviews__stars {
+  display:flex;
+  column-gap: 0.25rem;
+
+}
+
+.reviews__stars i{
+  font-size: 1rem;
+  color: var(--first-color);
+}
+
+.reviews__comment{
+  position: relative;
+  width: 280px;
+  justify-content: center;
+  text-align: center;
+}
+
+/* .reviews__comment::before{
+  content:open-quote;
+  position: absolute;
+  left: -0.4rem;
+  top: -0.5rem;
+} */
+
+/* .reviews__comment::after{
+  content: close-quote;
+  position: absolute;
+  left: 12rem;
+  top: 4.5rem;
+} */
+
+
+/* .reviews__comment::before,
+.reviews__comment::after{
+  font-size: 2.5rem;
+  font-weight: var(--font-semi-bold);
+  color: var(--first-color);
+} */
+
+/* .reviews__comment::before,
+.reviews__comment::after{
+  font-size: 2.5rem;
+  font-weight: var(--font-semi-bold);
+  color: var(--first-color);
+} */
+
+.reviews__image{
+  position: relative;
+  width: 320px;
+  height: 320px;
+  background: var(--gradient-color);
+  border-radius: 6rem;
+  justify-content: center;
+}
+
+.reviews__img{
+  width: 270px;
+  position: absolute;
+  bottom: 0;
+  left: 2rem;
+  right: 0 auto;
+  mask-image: linear-gradient(var(--first-color)80%, transparent 95%);
+  filter: var(--shadow-img-big);
+}
+
 
 
 /* Swiper class */
+.reviews .swiper-navigation-icon{
+  display: none;
+}
+/* 
+.reviews :is(.swiper-button-prev, .swiper-button-next){
+  top: initial;
+  bottom: 1.5rem;
+  width: 40px;
+  height: 40px;
+  background-color: var(--container-color);
+  box-shadow: var(--shadow-small);
+  color: var(--title-color);
+  border: 0.75rem;
+  font-size: 1.5rem;
+  transition: background-color .4s, box-shadow .4s, color .4s;
+}
+
+.reviews :is(.swiper-button-prev, .swiper-button-next):hover{
+  background-color: var(--first-color);
+  box-shadow: 0 4px 8px var(--shadow-first-color);
+} */
 
 
 /*=============== APP ===============*/
@@ -529,7 +658,8 @@ img {
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
-@media  screen and (max-width:360px) {
+ @media screen and  (max-width:360px) {
+
   .container{
     margin-inline: 1rem;
   }
@@ -543,7 +673,6 @@ img {
     justify-content: center;
   }
 
-  
 
 
 }
@@ -576,6 +705,8 @@ img {
     justify-content: center;
  
 
+
+}
 
 }
 
